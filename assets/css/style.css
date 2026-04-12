@@ -143,8 +143,6 @@ h6 {
   z-index: 0;
   background: transparent;
   pointer-events: none;
-  color: { value: "#12d640" },        // green dots
-  line_linked: { color: "#4fc3f7" }  // light blue lines
 }
 
 #header {
@@ -426,8 +424,8 @@ section .container {
 .about-me .img-fluid {
   width: 280px;
   height: 280px;
-  object-fit: cover;      
-  border-radius: 50%;      
+  object-fit: cover;
+  border-radius: 50%;
   border: 3px solid #12d640;
   display: block;
   margin: 0 auto;
@@ -475,7 +473,34 @@ section .container {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
+/*--------------------------------------------------------------
+# Education
+--------------------------------------------------------------*/
 
+.img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-container img {
+  width: 100%;
+  display: block;
+}
+
+.img-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  color: white;
+
+  text-align: center;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
 /*--------------------------------------------------------------
 # Interests
 --------------------------------------------------------------*/
